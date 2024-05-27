@@ -1,8 +1,9 @@
 //1. Write a program to print HELLO WORLD on screen.
 
+/*
 #include <iostream>
 using namespace std;
-/*
+
 int main()
 {
     system("color f0");
@@ -14,12 +15,24 @@ int main()
 //2. Write a program to display the following output using a single cout statement.
 //Subject Marks Mathematics 90 Computer 77 Chemistry 69
 
-int main()
-{
-    system("color f0");
-    cout << "Subject\t\tMarks\nMathematics\t90\nComputer\t77\nChemistry\t69" << endl;
+
+#include <iostream>
+#include <iomanip> // Header file for manipulation
+
+using namespace std;
+
+int main() {
+     system("color f0");
+    // Corrected function name (assuming it's for output formatting)
+    cout << setw(5) << "Subject" << setw(12) << "Marks" << endl;
+
+    cout << setw(5) << "Mathematics" << setw(5) << 90 << endl;
+    cout << setw(5) << "Computer" << setw(8) << 97 << endl;
+    cout << setw(5) << "Chemistry" << setw(7) << 60 << endl; // Corrected spelling
+
     return 0;
 }
+
 
 
 //3. Write a program which accept two numbers and print their sum.
@@ -233,6 +246,18 @@ cin >>days;
 
 
 return 0;
+}
+
+
+#include <iostream>
+#inlcude <iomanib>
+using namespace std;
+
+int main() {
+    cout << stew(12)<<"Subject"<<"Marks"<<endl<<setw(12)<<"Mathematics"<<"90"<<endl<<setw(12)<<
+    "Computer"<<"97"<<endl<setw(12)<<"chemistry" <<"60";
+
+    return 0;
 }
 */
 
